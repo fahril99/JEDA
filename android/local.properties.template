@@ -1,0 +1,8 @@
+# Local Flutter SDK path
+# Update this path to match your Flutter SDK installation directory
+# Example on macOS/Linux: /Users/username/flutter
+# Example on Windows: C:\\flutter
+flutter.sdk=/path/to/flutter
+
+# Optional: Add your Android SDK path if needed
+# sdk.dir=/path/to/android-sdk
