@@ -4,6 +4,10 @@ plugins {
     id("dev.flutter.flutter-gradle-plugin")
 }
 
+flutter {
+    source = "../.."
+}
+
 android {
     namespace = "com.jeda.app"
     compileSdk = 34
@@ -32,10 +36,6 @@ android {
             shrinkResources = false
         }
     }
-}
-
-flutter {
-    source = "../.."
 }
 
 dependencies {
