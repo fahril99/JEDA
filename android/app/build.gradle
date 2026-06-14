@@ -12,8 +12,8 @@ android {
         applicationId = "com.jeda.app"
         minSdk = 24
         targetSdk = 34
-        versionCode = flutter.versionCode
-        versionName = flutter.versionName
+        versionCode = flutterVersionCode?.toInteger() ?: 1
+        versionName = flutterVersionName ?: "1.0.0"
     }
 
     compileOptions {
