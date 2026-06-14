@@ -4,6 +4,8 @@ plugins {
     id("dev.flutter.flutter-gradle-plugin")
 }
 
+// IMPORTANT: Flutter block must be defined BEFORE the android block
+// so that flutter.versionCode and flutter.versionName are available
 flutter {
     source = "../.."
 }
@@ -16,22 +18,27 @@ android {
         applicationId = "com.jeda.app"
         minSdk = 24
         targetSdk = 34
+        // These properties come from the flutter block above
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
 
     compileOptions {
+        // Java 11 is recommended for Android Gradle Plugin 8.3.0
+        // and provides better performance and modern language features
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
 
     kotlinOptions {
+        // Must match the Java version specified in compileOptions
         jvmTarget = "11"
     }
 
     buildTypes {
         release {
             signingConfig = signingConfigs.getByName("debug")
+            // Use non-deprecated property names (removed 'is' prefix for Gradle 8.x compatibility)
             minifyEnabled = false
             shrinkResources = false
         }
@@ -39,5 +46,6 @@ android {
 }
 
 dependencies {
+    // Kotlin stdlib for JDK 11 compatibility
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 }
