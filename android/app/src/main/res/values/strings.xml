@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">JEDA</string>
+    <string name="accessibility_service_description">JEDA menggunakan Accessibility Service untuk mendeteksi saat aplikasi pemicu dibuka, lalu menampilkan layar jeda sadar.\n\nJEDA TIDAK membaca isi layar, chat, password, atau data pribadi. Hanya nama paket aplikasi yang terdeteksi.\n\nSemua data disimpan di perangkat. Tidak ada yang dikirim ke server.</string>
+</resources>

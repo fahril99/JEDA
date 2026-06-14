@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="launch_background">#FF050B14</color>
+    <color name="primary_blue">#FF4A9EFF</color>
+    <color name="emerald">#FF34D399</color>
+    <color name="surface">#FF0D1A2A</color>
+    <color name="text_primary">#FFF0F6FF</color>
+    <color name="text_secondary">#FF8BA3BE</color>
+</resources>
